@@ -1,23 +1,23 @@
 <!DOCTYPE html><html dir="rtl" lang="ar"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الشيخة الروحانية أم جابر | أقوى الأعمال الروحانية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet">
+    <title>الشيخة الروحانية أم جابر | عالم الروحانيات المتطور</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&amp;family=Amiri:wght@400;700&amp;family=Cairo:wght@300;400;600;700;900&amp;family=Aref+Ruqaa:wght@400;700&amp;display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-gold: #d4af37;
-            --secondary-gold: #b8860b;
-            --deep-red: #8b0000;
-            --crimson: #dc143c;
-            --royal-purple: #4b0082;
-            --mystic-blue: #191970;
-            --cosmic-black: #0c0c0c;
-            --starlight: #fff;
-            --shadow-glow: 0 0 30px;
-            --gradient-cosmic: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0c0c0c 100%);
-            --gradient-gold: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
-            --gradient-fire: linear-gradient(45deg, #ff4500, #ff6347, #dc143c);
-            --gradient-mystic: linear-gradient(135deg, #4b0082, #8a2be2, #9932cc);
+            --primary: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #b8860b 100%);
+            --secondary: linear-gradient(135deg, #6a0dad 0%, #8a2be2 50%, #9932cc 100%);
+            --accent: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff4500 100%);
+            --dark: #000000;
+            --light: #ffffff;
+            --gradient-cosmic: linear-gradient(135deg, #000000 0%, #0f0f23 25%, #1a1a2e 50%, #16213e 75%, #0f3460 100%);
+            --gradient-fire: linear-gradient(135deg, #ff416c 0%, #ff4b2b 50%, #dc2626 100%);
+            --gradient-ocean: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+            --gradient-sunset: linear-gradient(135deg, #fa709a 0%, #fee140 50%, #fa709a 100%);
+            --shadow-mega: 0 50px 100px rgba(0,0,0,0.6);
+            --glow-primary: 0 0 60px #d4af37;
+            --glow-accent: 0 0 60px #ff6b35;
+            --glow-purple: 0 0 60px #6a0dad;
         }
 
         * {
@@ -27,284 +27,564 @@
         }
 
         body {
-            font-family: 'Tajawal', sans-serif;
-            background: var(--cosmic-black);
-            color: var(--starlight);
-            line-height: 1.8;
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background: var(--dark);
+            color: var(--light);
             overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
         }
 
-        /* خلفية كونية متطورة */
-        .cosmic-background {
+        /* لودر فائق التطور */
+        .mega-loader {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--gradient-cosmic);
-            z-index: -3;
+            background: linear-gradient(45deg, #000000, #0f0f23, #1a1a2e, #000000);
+            background-size: 400% 400%;
+            animation: gradientShift 4s ease-in-out infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            transition: opacity 2s ease, visibility 2s ease;
         }
 
-        .cosmic-background::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(2px 2px at 20px 30px, #fff, transparent),
-                radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
-                radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-                radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
-                radial-gradient(2px 2px at 160px 30px, #fff, transparent);
-            background-repeat: repeat;
-            background-size: 200px 200px;
-            animation: twinkleStars 8s linear infinite;
+        .mega-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
         }
 
-        @keyframes twinkleStars {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
-        /* أوربا متحركة */
-        .floating-orbs {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -2;
+        .loader-complex {
+            position: relative;
+            text-align: center;
         }
 
-        .orb {
+        .loader-rings {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+        }
+
+        .ring {
             position: absolute;
             border-radius: 50%;
-            background: var(--gradient-gold);
-            opacity: 0.1;
-            animation: floatOrbs 25s infinite linear;
+            border: 4px solid transparent;
+            animation: spinRing 3s linear infinite;
         }
 
-        .orb:nth-child(1) { width: 60px; height: 60px; left: 10%; animation-duration: 20s; }
-        .orb:nth-child(2) { width: 80px; height: 80px; left: 70%; animation-duration: 25s; }
-        .orb:nth-child(3) { width: 40px; height: 40px; left: 40%; animation-duration: 30s; }
-
-        @keyframes floatOrbs {
-            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 0.1; }
-            90% { opacity: 0.1; }
-            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        .ring:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            border-top: 4px solid #d4af37;
+            border-right: 4px solid #ffd700;
+            animation-duration: 2s;
         }
 
-        /* شعاع ضوئي متحرك */
-        .light-beam {
+        .ring:nth-child(2) {
+            width: 160px;
+            height: 160px;
+            top: 20px;
+            left: 20px;
+            border-bottom: 4px solid #ff6b35;
+            border-left: 4px solid #ff4500;
+            animation-duration: 1.5s;
+            animation-direction: reverse;
+        }
+
+        .ring:nth-child(3) {
+            width: 120px;
+            height: 120px;
+            top: 40px;
+            left: 40px;
+            border-top: 4px solid #6a0dad;
+            border-right: 4px solid #9932cc;
+            animation-duration: 1s;
+        }
+
+        .ring:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            top: 60px;
+            left: 60px;
+            border-bottom: 4px solid #1e3a8a;
+            border-left: 4px solid #3b82f6;
+            animation-duration: 0.8s;
+            animation-direction: reverse;
+        }
+
+        @keyframes spinRing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader-text {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textPulse 2s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+
+        @keyframes textPulse {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.5); }
+        }
+
+        .loader-subtitle {
+            font-size: 1rem;
+            color: #8888aa;
+            margin-top: 15px;
+            animation: fadeInOut 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* خلفية متطورة ثلاثية الأبعاد */
+        .cosmic-3d-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, 
-                transparent 30%, 
-                rgba(212, 175, 55, 0.05) 50%, 
-                transparent 70%);
-            animation: lightSweep 12s infinite;
-            pointer-events: none;
-            z-index: -1;
+            z-index: -10;
+            background: var(--gradient-cosmic);
+            animation: cosmicFlow 20s ease-in-out infinite;
         }
 
-        @keyframes lightSweep {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+        @keyframes cosmicFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
-        /* الهيدر */
-        .header {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(139, 0, 0, 0.2));
-            border-bottom: 3px solid var(--primary-gold);
-        }
-
-        .main-title {
-            font-family: 'Amiri', serif;
-            font-size: clamp(2rem, 5vw, 4rem);
-            font-weight: 900;
-            background: var(--gradient-gold);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
-            margin-bottom: 1rem;
-            animation: titleGlow 3s ease-in-out infinite alternate;
-        }
-
-        @keyframes titleGlow {
-            0% { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); }
-            100% { filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.9)); }
-        }
-
-        .subtitle {
-            font-size: clamp(1rem, 3vw, 1.5rem);
-            color: var(--starlight);
-            opacity: 0.9;
-            margin-bottom: 2rem;
-        }
-
-        /* مجموعة الصور */
-        .images-gallery {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .image-card {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            background: linear-gradient(135deg, 
-                rgba(255, 255, 255, 0.1) 0%, 
-                rgba(255, 255, 255, 0.05) 100%);
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            backdrop-filter: blur(20px);
-            transition: all 0.4s ease;
-            cursor: pointer;
-        }
-
-        .image-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            border-color: var(--primary-gold);
-            box-shadow: 
-                0 20px 40px rgba(212, 175, 55, 0.3),
-                0 0 60px rgba(212, 175, 55, 0.2);
-        }
-
-        .image-card::before {
-            content: '';
-            position: absolute;
+        /* جسيمات متطورة */
+        .particles-3d {
+            position: fixed;
             top: 0;
-            left: -100%;
+            left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(212, 175, 55, 0.2), 
-                transparent);
-            transition: left 0.6s;
-            z-index: 1;
+            z-index: -9;
+            overflow: hidden;
         }
 
-        .image-card:hover::before {
-            left: 100%;
+        .particle-3d {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: particleFlow 15s infinite linear;
         }
 
-        .service-image {
+        @keyframes particleFlow {
+            0% {
+                transform: translateY(100vh) translateX(0) scale(0) rotate(0deg);
+                opacity: 0;
+            }
+            5% {
+                opacity: 0.7;
+            }
+            95% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) translateX(200px) scale(1.5) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* هولوجرام متحرك */
+        .hologram-wave {
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 18px;
-            filter: brightness(1.1) contrast(1.1);
-            transition: all 0.3s ease;
+            height: 200px;
+            z-index: -8;
+            opacity: 0.3;
         }
 
-        .image-card:hover .service-image {
-            filter: brightness(1.2) contrast(1.2);
+        .hologram-wave svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 20px #00ffff);
         }
 
-        /* أزرار الإجراءات السريعة */
-        .quick-actions {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
-            padding: 0 1rem;
-        }
-
-        .action-card {
-            background: linear-gradient(135deg, 
-                rgba(255, 255, 255, 0.1) 0%, 
-                rgba(255, 255, 255, 0.05) 100%);
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.4s ease;
-            cursor: pointer;
-            backdrop-filter: blur(15px);
-        }
-
-        .action-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-gold);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
-        }
-
-        .action-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-            filter: drop-shadow(0 0 10px currentColor);
-        }
-
-        .action-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: var(--gradient-gold);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .action-desc {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            line-height: 1.5;
-        }
-
-        /* شريط التواصل الثابت */
-        .contact-bar {
+        /* شريط تواصل متطور ومرئي */
+        .contact-bar-mega {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(135deg, 
-                rgba(0, 0, 0, 0.95) 0%, 
-                rgba(75, 0, 130, 0.95) 50%, 
-                rgba(0, 0, 0, 0.95) 100%);
-            backdrop-filter: blur(20px);
-            border-top: 3px solid var(--primary-gold);
-            padding: 1rem;
+            background: 
+                linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(106, 13, 173, 0.95) 25%, rgba(212, 175, 55, 0.95) 50%, rgba(255, 107, 53, 0.95) 75%, rgba(0,0,0,0.95) 100%),
+                radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+            backdrop-filter: blur(25px) saturate(150%);
+            border-top: 3px solid;
+            border-image: linear-gradient(90deg, #d4af37, #ff6b35, #6a0dad, #d4af37) 1;
+            padding: 20px;
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 20px;
             flex-wrap: wrap;
             z-index: 1000;
-            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 
+                0 -20px 40px rgba(0,0,0,0.5),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+            animation: contactBarGlow 4s ease-in-out infinite;
         }
 
-        .contact-btn {
-            background: var(--gradient-gold);
-            color: var(--cosmic-black);
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
+        @keyframes contactBarGlow {
+            0%, 100% { box-shadow: 0 -20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.3); }
+            50% { box-shadow: 0 -20px 40px rgba(0,0,0,0.5), 0 0 50px rgba(212, 175, 55, 0.6); }
+        }
+
+        .contact-btn-mega {
+            position: relative;
+            background: var(--primary);
+            color: var(--dark);
+            padding: 18px 35px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
+            font-weight: 900;
+            font-size: 1.3rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
+            gap: 12px;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid transparent;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow-mega);
+        }
+
+        .contact-btn-mega::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+            transition: left 0.8s ease;
+        }
+
+        .contact-btn-mega:hover::before {
+            left: 100%;
+        }
+
+        .contact-btn-mega::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .contact-btn-mega:hover::after {
+            width: 400px;
+            height: 400px;
+        }
+
+        .contact-btn-mega:hover {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 
+                var(--shadow-mega),
+                var(--glow-primary);
+            border-color: var(--light);
+        }
+
+        .whatsapp-mega {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 50%, #25D366 100%);
+            color: var(--light);
+            box-shadow: var(--shadow-mega), 0 0 30px #25D366;
+        }
+
+        .whatsapp-mega:hover {
+            box-shadow: var(--shadow-mega), 0 0 60px #25D366;
+        }
+
+        .phone-mega {
+            background: var(--accent);
+            color: var(--light);
+            box-shadow: var(--shadow-mega), var(--glow-accent);
+        }
+
+        .phone-mega:hover {
+            box-shadow: var(--shadow-mega), 0 0 60px #ff6b35;
+        }
+
+        .btn-icon {
+            font-size: 1.8rem;
+            filter: drop-shadow(0 0 10px currentColor);
+            animation: iconBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes iconBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* هيدر فائق التطور */
+        .header-mega {
             position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: 
+                radial-gradient(ellipse at top, rgba(106, 13, 173, 0.4) 0%, transparent 70%),
+                radial-gradient(ellipse at bottom, rgba(212, 175, 55, 0.4) 0%, transparent 70%),
+                radial-gradient(ellipse at center, rgba(255, 107, 53, 0.2) 0%, transparent 50%);
             overflow: hidden;
         }
 
-        .contact-btn::before {
+        .header-mega::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(45deg, transparent 40%, rgba(212, 175, 55, 0.1) 50%, transparent 60%),
+                linear-gradient(-45deg, transparent 40%, rgba(255, 107, 53, 0.1) 50%, transparent 60%);
+            animation: headerShimmer 8s ease-in-out infinite;
+        }
+
+        @keyframes headerShimmer {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .title-mega {
+            font-family: 'Amiri', serif;
+            font-size: clamp(3rem, 10vw, 7rem);
+            font-weight: 900;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 
+                0 0 50px rgba(212, 175, 55, 0.8),
+                0 0 100px rgba(212, 175, 55, 0.4);
+            margin-bottom: 2rem;
+            position: relative;
+            animation: titleMega 5s ease-in-out infinite;
+        }
+
+        .title-mega::before {
+            content: '✦';
+            position: absolute;
+            top: -3rem;
+            left: -3rem;
+            font-size: 3rem;
+            color: #ff6b35;
+            animation: sparkleOrbit 4s linear infinite;
+        }
+
+        .title-mega::after {
+            content: '✧';
+            position: absolute;
+            bottom: -3rem;
+            right: -3rem;
+            font-size: 3rem;
+            color: #6a0dad;
+            animation: sparkleOrbit 4s linear infinite reverse;
+        }
+
+        @keyframes titleMega {
+            0%, 100% { 
+                transform: translateY(0px) scale(1);
+                filter: brightness(1) drop-shadow(0 0 30px rgba(212, 175, 55, 0.5));
+            }
+            50% { 
+                transform: translateY(-20px) scale(1.05);
+                filter: brightness(1.3) drop-shadow(0 0 50px rgba(212, 175, 55, 0.9));
+            }
+        }
+
+        @keyframes sparkleOrbit {
+            0% { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+        }
+
+        .subtitle-mega {
+            font-size: clamp(1.3rem, 4vw, 2.5rem);
+            font-weight: 600;
+            color: var(--light);
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            animation: subtitleFloat 3s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes subtitleFloat {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+
+        /* إحصائيات متطورة */
+        .stats-mega {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto 4rem;
+            perspective: 1000px;
+        }
+
+        .stat-mega {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid transparent;
+            border-image: var(--primary) 1;
+            border-radius: 25px;
+            padding: 2.5rem;
+            text-align: center;
+            backdrop-filter: blur(30px) saturate(150%);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .stat-mega::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 1s ease;
+        }
+
+        .stat-mega:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-mega:hover {
+            transform: translateY(-15px) rotateX(10deg) rotateY(5deg);
+            box-shadow: 
+                var(--shadow-mega),
+                var(--glow-primary);
+            border-image: var(--accent) 1;
+        }
+
+        .stat-number-mega {
+            font-size: 4rem;
+            font-weight: 900;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .stat-label-mega {
+            font-size: 1.2rem;
+            color: var(--light);
+            opacity: 0.9;
+            font-weight: 600;
+        }
+
+        /* معرض المنتجات الفائق */
+        .products-mega {
+            padding: 6rem 2rem;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(106, 13, 173, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 107, 53, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.2) 0%, transparent 50%);
+        }
+
+        .products-title-mega {
+            font-family: 'Amiri', serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            text-align: center;
+            margin-bottom: 4rem;
+            background: var(--gradient-sunset);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            animation: titlePulse 4s ease-in-out infinite;
+        }
+
+        .products-title-mega::after {
+            content: '';
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 3px;
+            animation: lineExpand 3s ease-in-out infinite;
+        }
+
+        @keyframes titlePulse {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.05); filter: brightness(1.3); }
+        }
+
+        @keyframes lineExpand {
+            0%, 100% { width: 150px; }
+            50% { width: 250px; }
+        }
+
+        .products-grid-mega {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            perspective: 2000px;
+        }
+
+        .product-mega {
+            position: relative;
+            background: rgba(255,255,255,0.03);
+            border-radius: 30px;
+            overflow: hidden;
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+            border-image: linear-gradient(45deg, #d4af37, #ff6b35, #6a0dad, #d4af37) 1;
+            backdrop-filter: blur(30px) saturate(150%);
+            cursor: pointer;
+            transform-style: preserve-3d;
+        }
+
+        .product-mega:hover {
+            transform: translateY(-20px) rotateX(5deg) rotateY(5deg) scale(1.03);
+            box-shadow: 
+                var(--shadow-mega),
+                0 0 100px rgba(212, 175, 55, 0.4);
+        }
+
+        .product-mega::before {
             content: '';
             position: absolute;
             top: 0;
@@ -313,95 +593,175 @@
             height: 100%;
             background: linear-gradient(90deg, 
                 transparent, 
-                rgba(255, 255, 255, 0.3), 
+                rgba(212, 175, 55, 0.3), 
                 transparent);
-            transition: left 0.5s;
+            transition: left 1s ease;
+            z-index: 1;
         }
 
-        .contact-btn:hover::before {
+        .product-mega:hover::before {
             left: 100%;
         }
 
-        .contact-btn:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 
-                0 10px 25px rgba(212, 175, 55, 0.4),
-                0 0 30px rgba(212, 175, 55, 0.2);
-            border-color: var(--starlight);
+        .product-image-mega {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 0.8s ease;
+            border-radius: 30px;
         }
 
-        .whatsapp-btn {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
+        .product-mega:hover .product-image-mega {
+            transform: scale(1.1);
+            filter: brightness(1.2) contrast(1.2) saturate(1.3);
         }
 
-        .phone-btn {
-            background: var(--gradient-fire);
-            color: white;
-        }
-
-        /* قسم الخدمات الرئيسية */
-        .main-services {
-            padding: 3rem 1rem;
-            background: linear-gradient(180deg, 
+        .product-overlay-mega {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
                 transparent 0%, 
-                rgba(75, 0, 130, 0.1) 50%, 
-                transparent 100%);
+                rgba(0,0,0,0.7) 30%, 
+                rgba(0,0,0,0.95) 100%);
+            color: var(--light);
+            padding: 3rem;
+            transform: translateY(100%);
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 2;
         }
 
-        .services-title {
+        .product-mega:hover .product-overlay-mega {
+            transform: translateY(0);
+        }
+
+        .product-title-mega {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .product-description-mega {
+            font-size: 1rem;
+            opacity: 0.95;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .product-btn-mega {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 900;
+            display: inline-block;
+            transition: all 0.4s ease;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-btn-mega::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .product-btn-mega:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .product-btn-mega:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        /* قسم الخدمات المتطور */
+        .services-mega {
+            padding: 6rem 2rem;
+            background: 
+                conic-gradient(from 0deg at 50% 50%, 
+                    rgba(106, 13, 173, 0.1) 0deg,
+                    rgba(212, 175, 55, 0.1) 120deg,
+                    rgba(255, 107, 53, 0.1) 240deg,
+                    rgba(106, 13, 173, 0.1) 360deg);
+        }
+
+        .services-title-mega {
             font-family: 'Amiri', serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
+            font-size: clamp(3rem, 8vw, 5rem);
             text-align: center;
-            margin-bottom: 3rem;
-            background: var(--gradient-mystic);
+            margin-bottom: 4rem;
+            background: var(--gradient-ocean);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             position: relative;
         }
 
-        .services-title::after {
-            content: '✦ ✧ ✦';
+        .services-title-mega::after {
+            content: '✦ ✧ ✦ ✧ ✦';
             position: absolute;
-            bottom: -1.5rem;
+            bottom: -2rem;
             left: 50%;
             transform: translateX(-50%);
             font-size: 1.5rem;
-            color: var(--primary-gold);
-            animation: sparkle 2s ease-in-out infinite;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: sparkleChain 3s ease-in-out infinite;
         }
 
-        @keyframes sparkle {
-            0%, 100% { opacity: 1; transform: translateX(-50%) scale(1); }
-            50% { opacity: 0.5; transform: translateX(-50%) scale(1.2); }
+        @keyframes sparkleChain {
+            0%, 100% { 
+                opacity: 1; 
+                transform: translateX(-50%) scale(1); 
+            }
+            50% { 
+                opacity: 0.7; 
+                transform: translateX(-50%) scale(1.2); 
+            }
         }
 
-        .services-grid {
+        .services-grid-mega {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        .service-card {
-            background: linear-gradient(135deg, 
-                rgba(255, 255, 255, 0.1) 0%, 
-                rgba(255, 255, 255, 0.05) 50%, 
-                rgba(255, 255, 255, 0.1) 100%);
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
+        .service-mega {
             position: relative;
+            background: rgba(255,255,255,0.02);
+            border: 2px solid transparent;
+            border-image: linear-gradient(135deg, #d4af37, #ff6b35, #6a0dad) 1;
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
             overflow: hidden;
-            backdrop-filter: blur(25px);
-            transition: all 0.5s ease;
-            cursor: pointer;
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(30px) saturate(150%);
+            transform-style: preserve-3d;
         }
 
-        .service-card::before {
+        .service-mega::before {
             content: '';
             position: absolute;
             top: -50%;
@@ -409,432 +769,633 @@
             width: 200%;
             height: 200%;
             background: conic-gradient(
-                transparent, 
-                rgba(212, 175, 55, 0.1), 
-                transparent, 
-                rgba(220, 20, 60, 0.1), 
-                transparent);
-            animation: rotate 15s linear infinite;
+                from 0deg,
+                transparent 0deg,
+                rgba(212, 175, 55, 0.2) 90deg,
+                transparent 180deg,
+                rgba(255, 107, 53, 0.2) 270deg,
+                transparent 360deg
+            );
+            animation: serviceRotate 10s linear infinite;
             opacity: 0;
-            transition: opacity 0.5s;
+            transition: opacity 0.8s ease;
         }
 
-        .service-card:hover::before {
+        .service-mega:hover::before {
             opacity: 1;
         }
 
-        @keyframes rotate {
+        @keyframes serviceRotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-gold);
+        .service-mega:hover {
+            transform: translateY(-15px) scale(1.05);
+            border-image: linear-gradient(135deg, #ffd700, #ff4500, #9932cc) 1;
             box-shadow: 
-                0 20px 40px rgba(212, 175, 55, 0.4),
-                0 0 60px rgba(212, 175, 55, 0.2);
+                var(--shadow-mega),
+                0 0 80px rgba(212, 175, 55, 0.4);
         }
 
-        .service-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+        .service-icon-mega {
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
             display: block;
-            filter: drop-shadow(0 0 15px currentColor);
-            animation: iconFloat 4s ease-in-out infinite;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 0 20px currentColor);
+            animation: iconMegaPulse 4s ease-in-out infinite;
         }
 
-        @keyframes iconFloat {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+        @keyframes iconMegaPulse {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg); 
+                filter: drop-shadow(0 0 20px currentColor);
+            }
+            50% { 
+                transform: scale(1.2) rotate(5deg); 
+                filter: drop-shadow(0 0 40px currentColor);
+            }
         }
 
-        .service-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: var(--gradient-gold);
+        .service-title-mega {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: var(--primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
         }
 
-        .service-description {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
+        .service-description-mega {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .service-cta {
-            background: var(--gradient-gold);
-            color: var(--cosmic-black);
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
+        .service-btn-mega {
+            background: var(--accent);
+            color: var(--light);
+            padding: 15px 35px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 900;
             display: inline-block;
-            transition: all 0.3s ease;
+            transition: all 0.6s ease;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .service-cta:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        .service-btn-mega::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            transition: all 0.8s ease;
+            transform: translate(-50%, -50%);
         }
 
-        /* تأثيرات متحركة */
-        .fade-in {
+        .service-btn-mega:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .service-btn-mega:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.5);
+        }
+
+        /* تأثيرات الانيميشن المتطورة */
+        .animate-mega {
             opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease forwards;
+            transform: translateY(100px) scale(0.8);
+            transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .animate-mega.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
         }
 
-        .animate-delay-1 { animation-delay: 0.2s; }
-        .animate-delay-2 { animation-delay: 0.4s; }
-        .animate-delay-3 { animation-delay: 0.6s; }
-        .animate-delay-4 { animation-delay: 0.8s; }
+        /* مؤشر الماوس المتطور */
+        .cursor-mega {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #d4af37, #ff6b35);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.2s ease;
+            opacity: 0;
+            mix-blend-mode: difference;
+        }
 
-        /* تصميم متجاوب للجوال */
+        .cursor-mega.active {
+            opacity: 1;
+            animation: cursorMegaPulse 2s infinite;
+        }
+
+        @keyframes cursorMegaPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(2); }
+        }
+
+        /* تصميم متجاوب فائق */
         @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            .quick-actions {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            .contact-bar {
+            .contact-bar-mega {
                 flex-direction: column;
-                gap: 0.8rem;
-                padding: 0.8rem;
+                gap: 15px;
+                padding: 15px;
             }
             
-            .contact-btn {
-                padding: 1rem;
+            .contact-btn-mega {
+                padding: 15px 25px;
+                font-size: 1.1rem;
                 justify-content: center;
-                font-size: 1rem;
             }
             
-            .action-card {
-                padding: 1.5rem;
+            .stats-mega {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
             }
             
-            .service-card {
-                padding: 1.5rem;
+            .products-grid-mega {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .services-grid-mega {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .service-mega,
+            .product-mega {
+                padding: 2rem;
             }
         }
 
         @media (max-width: 480px) {
-            .header {
-                padding: 1.5rem 0.5rem;
+            .stats-mega {
+                grid-template-columns: 1fr;
+                gap: 1rem;
             }
             
-            .images-gallery {
-                padding: 1rem 0.5rem;
+            .stat-mega {
+                padding: 2rem;
             }
             
-            .main-services {
-                padding: 2rem 0.5rem;
+            .contact-btn-mega {
+                padding: 12px 20px;
+                font-size: 1rem;
             }
-            
-            .image-card {
-                border-radius: 15px;
-            }
-            
-            .service-image {
-                border-radius: 13px;
-            }
-        }
-
-        /* تأثير الانتقال السلس */
-        * {
-            scroll-behavior: smooth;
-        }
-
-        /* إخفاء شريط التمرير */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--cosmic-black);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary-gold);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--secondary-gold);
         }
     </style>
 <script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.bd4eeeb8e8e02052ee92.js"></script></head>
 <body>
-    <!-- الخلفية الكونية -->
-    <div class="cosmic-background"></div>
-    
-    <!-- الأوربا المتحركة -->
-    <div class="floating-orbs">
-        <div class="orb"></div>
-        <div class="orb"></div>
-        <div class="orb"></div>
+    <!-- لودر فائق التطور -->
+    <div class="mega-loader" id="megaLoader">
+        <div class="loader-complex">
+            <div class="loader-rings">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+            <div class="loader-text">🌟 عالم الروحانيات الأعظم 🌟</div>
+            <div class="loader-subtitle">يتم تحضير التجربة الروحانية المتطورة...</div>
+        </div>
     </div>
-    
-    <!-- شعاع الضوء -->
-    <div class="light-beam"></div>
 
-    <!-- الهيدر -->
-    <header class="header">
-        <h1 class="main-title fade-in">🌟 الشيخة الروحانية أم جابر 🌟</h1>
-        <p class="subtitle fade-in animate-delay-1">✨ أقوى الأعمال الروحانية الشرعية المجربة والمضمونة ✨</p>
+    <!-- مؤشر الماوس المتطور -->
+    <div class="cursor-mega" id="cursorMega"></div>
+
+    <!-- خلفية ثلاثية الأبعاد -->
+    <div class="cosmic-3d-bg"></div>
+    
+    <!-- جسيمات متطورة -->
+    <div class="particles-3d" id="particles3d"></div>
+    
+    <!-- هولوجرام متحرك -->
+    <div class="hologram-wave">
+        <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
+            <path d="M0,100 C300,20 600,180 1200,100 L1200,200 L0,200 Z" fill="url(#hologramGradient)" opacity="0.6"></path>
+            <path d="M0,120 C400,40 800,160 1200,120 L1200,200 L0,200 Z" fill="url(#hologramGradient2)" opacity="0.4"></path>
+            <defs>
+                <linearGradient id="hologramGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8"></stop>
+                    <stop offset="50%" style="stop-color:#d4af37;stop-opacity:0.6"></stop>
+                    <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0.8"></stop>
+                </linearGradient>
+                <linearGradient id="hologramGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#6a0dad;stop-opacity:0.6"></stop>
+                    <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:0.4"></stop>
+                    <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0.6"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- الهيدر الفائق -->
+    <header class="header-mega">
+        <h1 class="title-mega">الشيخة الروحانية أم جابر</h1>
+        <p class="subtitle-mega">✨ عالم الروحانيات الأعظم - أقوى الأعمال المجربة والمضمونة بإذن الله ✨</p>
+        
+        <!-- إحصائيات متطورة -->
+        <div class="stats-mega">
+            <div class="stat-mega animate-mega">
+                <span class="stat-number-mega" data-count="25">0</span>
+                <div class="stat-label-mega">سنة خبرة</div>
+            </div>
+            <div class="stat-mega animate-mega">
+                <span class="stat-number-mega" data-count="20000">0</span>
+                <div class="stat-label-mega">حالة ناجحة</div>
+            </div>
+            <div class="stat-mega animate-mega">
+                <span class="stat-number-mega" data-count="24">0</span>
+                <div class="stat-label-mega">ساعة استجابة</div>
+            </div>
+            <div class="stat-mega animate-mega">
+                <span class="stat-number-mega" data-count="100">0</span>
+                <div class="stat-label-mega">% ضمان</div>
+            </div>
+        </div>
     </header>
 
-    <!-- معرض الصور -->
-    <section class="images-gallery">
-        <div class="gallery-grid">
-            <div class="image-card fade-in animate-delay-1">
-                <img src="https://pfst.cf2.poecdn.net/base/image/a1fd1f94449825f61a64ac68323d3d43e93803003a338d1fa314e2f4720cd3e4?w=869&amp;h=911" alt="جلب الحبيب واستهوايل جلب الحبيب" class="service-image">
+    <!-- معرض المنتجات الفائق -->
+    <section class="products-mega">
+        <h2 class="products-title-mega">🌟 منتجاتنا الروحانية الحصرية 🌟</h2>
+        
+        <div class="products-grid-mega">
+            <!-- المنتج الأول -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/25b298ade8209dab70d01e49698f2444be02695845b7d156384c96bf377bdbfa?w=869&amp;h=911" alt="جلب الحبيب واستهوايل جلب الحبيب" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">جلب الحبيب واستهوايل جلب الحبيب</h3>
+                    <p class="product-description-mega">علاج المس بكافة أنواعه تسهيل الأمور المستعصية أعمال الطاعة والمحبة والتفرقة والربط والكره</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💬 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-2">
-                <img src="https://pfst.cf2.poecdn.net/base/image/0a256ec830c40a93d64cc008f309b020da01542cdf86dbd86406a1aa47e476fd?w=869&amp;h=911" alt="نسخة بالشرق الأوسط لفك السحر المتجدد" class="service-image">
+            <!-- المنتج الثاني -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/a1207dca03e068e907b6baf46cdd26f3881c7ad7d7ecaed371214d1bb2d254f5?w=869&amp;h=911" alt="جلب الحبيب بسرعة البرق" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">جلب الحبيب بسرعة البرق</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💕 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-3">
-                <img src="https://pfst.cf2.poecdn.net/base/image/7254356a4aa50592b951ccfcb4f43eda4bad203bbbbcf066e6f82c0506c7d35f?w=869&amp;h=911" alt="عمل محبة بين الزوجين" class="service-image">
+            <!-- المنتج الثالث -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/a1fd1f94449825f61a64ac68323d3d43e93803003a338d1fa314e2f4720cd3e4?w=869&amp;h=911" alt="جلب الحبيب واستهوايل جلب الحبيب" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">جلب الحبيب واستهوايل جلب الحبيب</h3>
+                    <p class="product-description-mega">تريده يوجد خاتم مروحن ب7 خدام من أقوى المرة للحاجة الشخصية</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">🔮 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-4">
-                <img src="https://pfst.cf2.poecdn.net/base/image/2fdaafeb5b8e7d3f0bd2606d0275f6ca75b24f3aa95a7ff1223502917c1cd7e1?w=869&amp;h=911" alt="أعمال جلب الحبيب" class="service-image">
+            <!-- المنتج الرابع -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/0a256ec830c40a93d64cc008f309b020da01542cdf86dbd86406a1aa47e476fd?w=869&amp;h=911" alt="نسخة شيخة بالشرق الأوسط" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">نسخة شيخة بالشرق الأوسط</h3>
+                    <p class="product-description-mega">لفك السحر المتجدد أضمن نسخة بالشرق الأوسط لفك السحر المتجدد وهو من الأسحار المدفونة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">🛡️ اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-1">
-                <img src="https://pfst.cf2.poecdn.net/base/image/4f5f5ea4dde1878e68e2fdf7ff0932c6dda0f3140c0e32f74224653110c7c42d?w=869&amp;h=911" alt="عمل محبة وطاعة بين الأهل" class="service-image">
+            <!-- المنتج الخامس -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/7254356a4aa50592b951ccfcb4f43eda4bad203bbbbcf066e6f82c0506c7d35f?w=869&amp;h=911" alt="عمل محبة بين الزوجين" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">عمل محبة بين الزوجين</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💖 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-2">
-                <img src="https://pfst.cf2.poecdn.net/base/image/253a44e74f16a1122f72f713c79132c660c32b4700c611b1d833ca472e2f2219?w=869&amp;h=911" alt="رد المطلقات لبيتهم" class="service-image">
+            <!-- المنتج السادس -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/2fdaafeb5b8e7d3f0bd2606d0275f6ca75b24f3aa95a7ff1223502917c1cd7e1?w=869&amp;h=911" alt="أعمال جلب الحبيب" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">أعمال جلب الحبيب</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💞 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-3">
-                <img src="https://pfst.cf2.poecdn.net/base/image/5e07002e04b331a80627f9d7662866b7dcd67b505f304bd22d6ee872fd716e6e?w=869&amp;h=911" alt="جلب الحبيب للزواج" class="service-image">
+            <!-- المنتج السابع -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/4f5f5ea4dde1878e68e2fdf7ff0932c6dda0f3140c0e32f74224653110c7c42d?w=869&amp;h=911" alt="عمل محبة وطاعة بين الأهل" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">عمل محبة وطاعة بين الأهل</h3>
+                    <p class="product-description-mega">والاقارب وارباب الاعمال والعاشقين للسيطرة التامه عليه ويوجد ايضا طاعة للحبيب الزعلان</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">👨‍👩‍👧‍👦 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-4">
-                <img src="https://pfst.cf2.poecdn.net/base/image/62cfff3873e0a067501bf1394c9d3a920bfb02db0ab80007c9f8f9dc5d8c0123?w=869&amp;h=911" alt="أقوى شيخة روحانية في العالم" class="service-image">
+            <!-- المنتج الثامن -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/253a44e74f16a1122f72f713c79132c660c32b4700c611b1d833ca472e2f2219?w=869&amp;h=911" alt="رد المطلقات لبيتهم" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">رد المطلقات لبيتهم</h3>
+                    <p class="product-description-mega">تقوم الشيخة بأقوى أعمال الروحانية لرد المطلقات لبيتهم وخلال ثلاث أيام رد المطلقة هو من أقوى ما تتميز به</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💍 اطلب الآن</a>
+                </div>
             </div>
             
-            <div class="image-card fade-in animate-delay-1">
-                <img src="https://pfst.cf2.poecdn.net/base/image/8045ce53d724171dfda2e61dd1ce11a0e5e12ac718ad707e3ecba05ee58b6a79?w=869&amp;h=911" alt="شيخة روحانية مجربة ومضمونة" class="service-image">
+            <!-- المنتج التاسع -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/5e07002e04b331a80627f9d7662866b7dcd67b505f304bd22d6ee872fd716e6e?w=869&amp;h=911" alt="جلب الحبيب للزواج" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">جلب الحبيب للزواج</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💒 اطلب الآن</a>
+                </div>
+            </div>
+            
+            <!-- المنتج العاشر -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/62cfff3873e0a067501bf1394c9d3a920bfb02db0ab80007c9f8f9dc5d8c0123?w=869&amp;h=911" alt="أقوى شيخة روحانية في العالم" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">أقوى شيخة روحانية في العالم</h3>
+                    <p class="product-description-mega">لسحر الحبيب أقوى شيخة روحانية في العالم لسحر الحبيب عمل روحاني مضمون وحقيقي</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">🌟 اطلب الآن</a>
+                </div>
+            </div>
+            
+            <!-- المنتج الحادي عشر -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/8045ce53d724171dfda2e61dd1ce11a0e5e12ac718ad707e3ecba05ee58b6a79?w=869&amp;h=911" alt="شيخة روحانية مجربة ومضمونة" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">شيخة روحانية مجربة ومضمونة</h3>
+                    <p class="product-description-mega">في سلطنه عمان شيخة روحانية مجربة ومضمونه في سلطنه عمان أقوى معالجة روحانية</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">✨ اطلب الآن</a>
+                </div>
+            </div>
+            
+            <!-- المنتج الثاني عشر -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/bb3997ac655a4585dfc52d1e030130c0a63d8b6a600ae607edae7f7954ffd7b7?w=869&amp;h=911" alt="جلب الحبيب بسرعة البرق" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">جلب الحبيب بسرعة البرق</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">⚡ اطلب الآن</a>
+                </div>
+            </div>
+            
+            <!-- المنتج الثالث عشر -->
+            <div class="product-mega animate-mega">
+                <img src="https://pfst.cf2.poecdn.net/base/image/62f16f5948ea87ddbc4129ec5a41ec9418f6bda2b70bb771302d790004b5ae48?w=869&amp;h=911" alt="رد الحبيب المفارق" class="product-image-mega">
+                <div class="product-overlay-mega">
+                    <h3 class="product-title-mega">رد الحبيب المفارق</h3>
+                    <p class="product-description-mega">خبرة 25 سنة في العلوم الروحانية أضمن وأقوى الأعمال المجربة</p>
+                    <a href="https://wa.me/966545916508" class="product-btn-mega">💔 اطلب الآن</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- الإجراءات السريعة -->
-    <section class="quick-actions">
-        <div class="action-card fade-in animate-delay-1">
-            <span class="action-icon">💕</span>
-            <h3 class="action-title">جلب الحبيب خلال 24 ساعة</h3>
-            <p class="action-desc">أقوى الطرق الروحانية لعودة الحبيب خاضعاً محباً</p>
-        </div>
+    <!-- قسم الخدمات المتطور -->
+    <section class="services-mega" id="services">
+        <h2 class="services-title-mega">🔮 خدماتنا الروحانية المتخصصة 🔮</h2>
         
-        <div class="action-card fade-in animate-delay-2">
-            <span class="action-icon">🛡️</span>
-            <h3 class="action-title">فك السحر والعقد</h3>
-            <p class="action-desc">إبطال جميع أنواع السحر والأعمال السفلية نهائياً</p>
-        </div>
-        
-        <div class="action-card fade-in animate-delay-3">
-            <span class="action-icon">💍</span>
-            <h3 class="action-title">رد المطلقات</h3>
-            <p class="action-desc">عودة المطلقة لبيت زوجها خلال 3 أيام</p>
-        </div>
-        
-        <div class="action-card fade-in animate-delay-4">
-            <span class="action-icon">👰</span>
-            <h3 class="action-title">زواج العوانس</h3>
-            <p class="action-desc">تعجيل الزواج للمتأخرات والعوانس</p>
-        </div>
-    </section>
-
-    <!-- الخدمات الرئيسية -->
-    <section class="main-services">
-        <h2 class="services-title fade-in">🔮 خدماتنا الروحانية المتخصصة 🔮</h2>
-        
-        <div class="services-grid">
-            <div class="service-card fade-in animate-delay-1">
-                <span class="service-icon">💖</span>
-                <h3 class="service-title">جلب الحبيب بسرعة البرق</h3>
-                <p class="service-description">
-                    عودة الحبيب خاضعاً محباً راغباً خلال 24-72 ساعة بأقوى الطلاسم الشرعية المجربة
+        <div class="services-grid-mega">
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">💖</span>
+                <h3 class="service-title-mega">جلب الحبيب والمحبة</h3>
+                <p class="service-description-mega">
+                    عودة الحبيب خاضعاً محباً راغباً خلال 24-72 ساعة بأقوى الطلاسم الشرعية والأدعية المستجابة مع ضمان النتائج
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">💬 اطلب الآن</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">💬 اطلب الآن</a>
             </div>
             
-            <div class="service-card fade-in animate-delay-2">
-                <span class="service-icon">🔮</span>
-                <h3 class="service-title">فك السحر والحماية</h3>
-                <p class="service-description">
-                    إبطال جميع أنواع السحر والعقد الشيطانية وعلاج المس نهائياً بالقرآن الكريم
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">🛡️</span>
+                <h3 class="service-title-mega">فك السحر والحماية</h3>
+                <p class="service-description-mega">
+                    إبطال جميع أنواع السحر والعقد الشيطانية وعلاج المس نهائياً بالرقية الشرعية المعززة والطلاسم المقدسة
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">🛡️ احمي نفسك</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">🔮 احمي نفسك</a>
             </div>
             
-            <div class="service-card fade-in animate-delay-3">
-                <span class="service-icon">💍</span>
-                <h3 class="service-title">رد المطلقات</h3>
-                <p class="service-description">
-                    عودة المطلقة لبيت زوجها وأولادها خلال 3 أيام مع الحب والوفاق
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">💍</span>
+                <h3 class="service-title-mega">رد المطلقات</h3>
+                <p class="service-description-mega">
+                    عودة المطلقة لبيت زوجها وأولادها خلال 3 أيام مع المحبة والوفاق والسعادة الدائمة بضمان شرعي
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">👫 أعيدي زوجك</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">👫 أعيدي زوجك</a>
             </div>
             
-            <div class="service-card fade-in animate-delay-4">
-                <span class="service-icon">👰</span>
-                <h3 class="service-title">زواج العوانس</h3>
-                <p class="service-description">
-                    تعجيل الزواج للمتأخرات وجلب الخاطبين المناسبين بأقوى الأعمال الروحانية
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">👰</span>
+                <h3 class="service-title-mega">زواج العوانس</h3>
+                <p class="service-description-mega">
+                    تعجيل الزواج للمتأخرات وجلب الخاطبين المناسبين بأقوى الأعمال الروحانية المجربة والمضمونة
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">💒 ازرعي بذرة الزواج</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">💒 ابدئي رحلة الزواج</a>
             </div>
             
-            <div class="service-card fade-in animate-delay-1">
-                <span class="service-icon">🔥</span>
-                <h3 class="service-title">تهييج المحبة</h3>
-                <p class="service-description">
-                    إشعال نار المحبة والعشق وتهييج المشاعر الباردة بطرق روحانية فعالة
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">🔥</span>
+                <h3 class="service-title-mega">تهييج المحبة والعشق</h3>
+                <p class="service-description-mega">
+                    إشعال نار المحبة والعشق وتهييج المشاعر الباردة بطرق روحانية فعالة ومجربة مع ضمان الاستمرارية
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">🔥 أشعل الحب</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">🔥 أشعل الحب</a>
             </div>
             
-            <div class="service-card fade-in animate-delay-2">
-                <span class="service-icon">💰</span>
-                <h3 class="service-title">تنزيل الأموال</h3>
-                <p class="service-description">
-                    فتح أبواب الرزق والثروة وجلب المال من مصادر حلال بالأدعية المستجابة
+            <div class="service-mega animate-mega">
+                <span class="service-icon-mega">💰</span>
+                <h3 class="service-title-mega">تنزيل الأموال والرزق</h3>
+                <p class="service-description-mega">
+                    فتح أبواب الرزق والثروة وجلب المال من مصادر حلال بالأدعية المستجابة والطلاسم المبركة
                 </p>
-                <a href="https://wa.me/966545916508" class="service-cta">💎 افتح رزقك</a>
+                <a href="https://wa.me/966545916508" class="service-btn-mega">💎 افتح رزقك</a>
             </div>
         </div>
     </section>
 
-    <!-- شريط التواصل -->
-    <div class="contact-bar">
-        <a href="https://wa.me/966545916508" class="contact-btn whatsapp-btn">
-            <span>💬</span>
-            واتساب - استشارة مجانية فورية
+    <!-- شريط التواصل الفائق -->
+    <div class="contact-bar-mega">
+        <a href="https://wa.me/966545916508" class="contact-btn-mega whatsapp-mega">
+            <span class="btn-icon">💬</span>
+            واتساب - استشارة فورية مجانية
         </a>
-        <a href="tel:+966545916508" class="contact-btn phone-btn">
-            <span>📞</span>
+        <a href="tel:+966545916508" class="contact-btn-mega phone-mega">
+            <span class="btn-icon">📞</span>
             اتصال مباشر - متاح 24/7
-        </a>
-        <a href="https://wa.me/966545916508" class="contact-btn">
-            <span>🔮</span>
-            كشف روحاني مجاني
         </a>
     </div>
 
     <script>
-        // تأثيرات التحميل المتدرجة
+        // لودر فائق التطور
         window.addEventListener('load', () => {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            fadeElements.forEach(el => {
-                observer.observe(el);
-            });
-        });
-
-        // تأثيرات التفاعل مع البطاقات
-        const cards = document.querySelectorAll('.image-card, .action-card, .service-card');
-        
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.filter = 'brightness(1.1)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.filter = 'brightness(1)';
-            });
-            
-            card.addEventListener('click', () => {
-                card.style.transform = 'scale(0.98)';
-                setTimeout(() => {
-                    card.style.transform = '';
-                }, 150);
-            });
-        });
-
-        // تأثير البريق المتحرك
-        setInterval(() => {
-            const sparkles = ['✨', '⭐', '💫', '🌟', '✦', '✧'];
-            const sparkle = document.createElement('div');
-            sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
-            sparkle.style.position = 'fixed';
-            sparkle.style.left = Math.random() * window.innerWidth + 'px';
-            sparkle.style.top = Math.random() * window.innerHeight + 'px';
-            sparkle.style.fontSize = '1.5rem';
-            sparkle.style.pointerEvents = 'none';
-            sparkle.style.zIndex = '999';
-            sparkle.style.animation = 'sparkleFloat 4s ease-out forwards';
-            sparkle.style.color = '#d4af37';
-            
-            document.body.appendChild(sparkle);
-            
             setTimeout(() => {
-                sparkle.remove();
-            }, 4000);
-        }, 3000);
+                document.getElementById('megaLoader').classList.add('hidden');
+            }, 3000);
+        });
 
-        // إضافة تأثير البريق المتحرك
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes sparkleFloat {
+        // إنشاء جسيمات متطورة
+        function createAdvancedParticles() {
+            const container = document.getElementById('particles3d');
+            for (let i = 0; i < 80; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle-3d';
+                
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                const colors = ['#d4af37', '#ff6b35', '#6a0dad', '#00ffff', '#ff1493'];
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.boxShadow = `0 0 ${size * 2}px currentColor`;
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                
+                container.appendChild(particle);
+            }
+        }
+
+        // مؤشر الماوس المتطور
+        const cursorMega = document.getElementById('cursorMega');
+        document.addEventListener('mousemove', (e) => {
+            cursorMega.style.left = e.clientX - 15 + 'px';
+            cursorMega.style.top = e.clientY - 15 + 'px';
+            cursorMega.classList.add('active');
+        });
+
+        document.addEventListener('mouseleave', () => {
+            cursorMega.classList.remove('active');
+        });
+
+        // العداد المتطور
+        function animateAdvancedCounter(element) {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 3000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 16);
+        }
+
+        // الانيميشن المتطور عند التمرير
+        const observerOptions = {
+            threshold: 0.05,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // تشغيل العداد
+                    const counter = entry.target.querySelector('.stat-number-mega[data-count]');
+                    if (counter && !counter.classList.contains('animated')) {
+                        counter.classList.add('animated');
+                        setTimeout(() => {
+                            animateAdvancedCounter(counter);
+                        }, 500);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // مراقبة العناصر
+        document.querySelectorAll('.animate-mega').forEach(el => {
+            observer.observe(el);
+        });
+
+        // تأثير البريق الفائق
+        setInterval(() => {
+            const sparkles = ['✨', '⭐', '💫', '🌟', '✦', '✧', '🔮', '💎'];
+            const colors = ['#d4af37', '#ff6b35', '#6a0dad', '#00ffff', '#ff1493', '#00ff00'];
+            
+            for (let i = 0; i < 4; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = Math.random() * window.innerWidth + 'px';
+                sparkle.style.top = Math.random() * window.innerHeight + 'px';
+                sparkle.style.fontSize = Math.random() * 2 + 1.5 + 'rem';
+                sparkle.style.color = colors[Math.floor(Math.random() * colors.length)];
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.zIndex = '998';
+                sparkle.style.animation = 'sparkleAdvanced 6s ease-out forwards';
+                sparkle.style.textShadow = '0 0 20px currentColor';
+                sparkle.style.filter = 'drop-shadow(0 0 10px currentColor)';
+                
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 6000);
+            }
+        }, 2000);
+
+        // إضافة تأثير البريق المتطور
+        const sparkleAdvancedStyle = document.createElement('style');
+        sparkleAdvancedStyle.textContent = `
+            @keyframes sparkleAdvanced {
                 0% {
                     opacity: 1;
                     transform: translateY(0) scale(0) rotate(0deg);
                 }
+                25% {
+                    opacity: 1;
+                    transform: translateY(-20px) scale(1) rotate(90deg);
+                }
                 50% {
                     opacity: 1;
-                    transform: translateY(-30px) scale(1) rotate(180deg);
+                    transform: translateY(-40px) scale(1.5) rotate(180deg);
+                }
+                75% {
+                    opacity: 0.8;
+                    transform: translateY(-60px) scale(1.2) rotate(270deg);
                 }
                 100% {
                     opacity: 0;
-                    transform: translateY(-60px) scale(0) rotate(360deg);
+                    transform: translateY(-80px) scale(0) rotate(360deg);
                 }
             }
         `;
-        document.head.appendChild(style);
+        document.head.appendChild(sparkleAdvancedStyle);
 
-        // تأثير تغيير الألوان
+        // تغيير الألوان المتطور
         const colorSchemes = [
-            { gold: '#d4af37', red: '#dc143c', purple: '#4b0082' },
-            { gold: '#ffd700', red: '#ff4500', purple: '#8a2be2' },
-            { gold: '#daa520', red: '#b22222', purple: '#9370db' }
+            { primary: '#d4af37', accent: '#ff6b35', purple: '#6a0dad' },
+            { primary: '#ffd700', accent: '#ff4500', purple: '#8a2be2' },
+            { primary: '#daa520', accent: '#dc2626', purple: '#9370db' },
+            { primary: '#b8860b', accent: '#ff6347', purple: '#4b0082' },
+            { primary: '#ffd700', accent: '#ff1493', purple: '#00ffff' }
         ];
 
         let currentScheme = 0;
@@ -842,43 +1403,104 @@
             currentScheme = (currentScheme + 1) % colorSchemes.length;
             const scheme = colorSchemes[currentScheme];
             
-            document.documentElement.style.setProperty('--primary-gold', scheme.gold);
-            document.documentElement.style.setProperty('--crimson', scheme.red);
-            document.documentElement.style.setProperty('--royal-purple', scheme.purple);
-        }, 20000);
+            document.documentElement.style.setProperty('--primary-single', scheme.primary);
+            document.documentElement.style.setProperty('--accent-single', scheme.accent);
+            document.documentElement.style.setProperty('--purple-single', scheme.purple);
+        }, 8000);
 
-        // تحسين الأداء للجوال
-        let ticking = false;
-        
-        function updateParallax() {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.light-beam');
-            const speed = scrolled * 0.5;
+        // تأثيرات التفاعل المتطورة
+        document.querySelectorAll('.product-mega, .service-mega, .stat-mega').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.filter = 'brightness(1.2) saturate(1.3) contrast(1.1)';
+            });
             
-            if (parallax) {
-                parallax.style.transform = `translateY(${speed}px)`;
-            }
+            card.addEventListener('mouseleave', () => {
+                card.style.filter = 'brightness(1) saturate(1) contrast(1)';
+            });
+            
+            card.addEventListener('click', () => {
+                card.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    card.style.transform = '';
+                }, 200);
+            });
+        });
+
+        // تأثيرات التمرير المتطورة
+        let ticking = false;
+        function updateAdvancedParallax() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.2;
+            
+            document.querySelector('.cosmic-3d-bg').style.transform = `translateY(${rate}px) scale(${1 + scrolled * 0.0001})`;
+            document.querySelector('.particles-3d').style.transform = `translateY(${rate * 0.5}px)`;
             
             ticking = false;
         }
         
-        function requestTick() {
+        function requestAdvancedTick() {
             if (!ticking) {
-                requestAnimationFrame(updateParallax);
+                requestAnimationFrame(updateAdvancedParallax);
                 ticking = true;
             }
         }
         
-        window.addEventListener('scroll', requestTick);
+        window.addEventListener('scroll', requestAdvancedTick);
 
-        // تأثير النقر على الصور
-        const imageCards = document.querySelectorAll('.image-card');
-        imageCards.forEach(card => {
-            card.addEventListener('click', () => {
-                // يمكن إضافة وظيفة فتح الصورة في مودال أو توجيه إلى صفحة أخرى
-                window.open('https://wa.me/966545916508', '_blank');
+        // تأثيرات الصوت البصرية
+        document.querySelectorAll('.contact-btn-mega').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                // إضافة تأثير اهتزاز بصري
+                btn.style.animation = 'none';
+                setTimeout(() => {
+                    btn.style.animation = 'buttonVibrate 0.3s ease-in-out';
+                }, 10);
             });
         });
+
+        // إضافة تأثير الاهتزاز
+        const vibrationStyle = document.createElement('style');
+        vibrationStyle.textContent = `
+            @keyframes buttonVibrate {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-2px); }
+                75% { transform: translateX(2px); }
+            }
+        `;
+        document.head.appendChild(vibrationStyle);
+
+        // بدء التشغيل
+        createAdvancedParticles();
+        
+        // تحسين الأداء للجوال
+        if (window.innerWidth <= 768) {
+            // تقليل عدد الجسيمات للجوال
+            document.querySelectorAll('.particle-3d').forEach((particle, index) => {
+                if (index > 30) particle.remove();
+            });
+        }
+
+        // تأثير النقر على المنتجات
+        document.querySelectorAll('.product-mega').forEach(product => {
+            product.addEventListener('click', () => {
+                // تأثير نبضة عند النقر
+                product.style.animation = 'none';
+                setTimeout(() => {
+                    product.style.animation = 'productPulse 0.6s ease-in-out';
+                }, 10);
+            });
+        });
+
+        // إضافة تأثير النبضة
+        const pulseStyle = document.createElement('style');
+        pulseStyle.textContent = `
+            @keyframes productPulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(pulseStyle);
     </script>
 
 
